@@ -1,11 +1,9 @@
 {
-"scripts": {
-    "testing" : "node hScripts.js"
-}, 
-
-"devDependencies": {
-"css-loader": "^6.7.1"
-    
-
-}
+    "scripts": {
+        "testing": "node hScripts.js",
+        "exec": "node minMax.js"
+    },
+    "devDependencies": {
+        "css-loader": "^6.7.1"
+    }
 }
