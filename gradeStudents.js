@@ -32,7 +32,7 @@ function gradingStudents(grades) {
 
 function testResult(foo, result) {
     var f = foo;
-    if (f === result) {
+    if (JSON.stringify(foo) === JSON.stringify( result)) {
         console.log("Test completed!");
     }
     else console.log("Test failed!\n The waiting result is " + result);
