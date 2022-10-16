@@ -3,7 +3,9 @@ function findMedian(arr) {
     arr.sort();
 
     console.log(arr.sort());
-    return arr.sort()[Math.ceil(arr.length/2)-1];
+    return arr.length %2 !=0 ?   
+    arr.sort()[Math.ceil(arr.length/2)-1]:
+    arr.sort()[arr.length/2];
     
 
 }
