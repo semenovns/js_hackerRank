@@ -6,11 +6,9 @@ function sortBubble(arr) {
 
     while (!isSorted) {
         isSorted = true;
-        for (let i = 1; i < arr.length; i++) {
-            if (arr[i - 1] > arr[i]) {
-                let t = arr[i - 1];
-                arr[i - 1] = arr[i];
-                arr[i] = t;
+        for (let i = 0; i < arr.length-1; i++) {
+            if (arr[i] > arr[i+1]) {
+                [arr[i], arr[i+1]] = [arr[i+1], arr[i]]
                 isSorted = false;
             }
         }
