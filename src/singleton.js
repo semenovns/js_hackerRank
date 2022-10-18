@@ -15,12 +15,18 @@ let Singleton = (() => {
     return { getInstance: (name) => { return !instance ? (instance = new Pirate(name)) : instance } };
 })();
 
+module.exports = function Singleton() {
+    if (typeof Singleton.instance === 'object') {
+      return Singleton.instance;
+    }
+    Singleton.instance = this;
+  };
 
-let obj = Singleton;
-
-
+  /*
+  Small tests
 let pirate0 = Singleton.getInstance("Samurai");
 let pirate1 = Singleton.getInstance("Johny");
 let pirate2 = Singleton.getInstance("Archie");
 
 console.log(pirate0, pirate1, pirate2);
+console.log(pirate0===pirate1);*/

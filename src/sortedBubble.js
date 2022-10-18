@@ -1,6 +1,6 @@
 
 
-function sortBubble(arr) {
+export default function sortBubble(arr) {
 
     let isSorted = false;
 
@@ -16,4 +16,3 @@ function sortBubble(arr) {
     return arr;
 }
 
-console.log(sortBubble([5, 4, 8, 2, 17, 0, -76, 13]));
