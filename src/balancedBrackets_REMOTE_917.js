@@ -15,11 +15,8 @@ export default function isBalanced(s) {
     return subStr.length == 0 ? 'YES' : 'NO';
 }
 
-<<<<<<< HEAD
-=======
 const testBalanced = "{{[[(())]]}}"; //balanced
 const testUnbalanced = "{(([])[])[]]}}";
 
 console.log(isBalanced(testBalanced));
 console.log(isBalanced(testUnbalanced));
->>>>>>> 9507e4f0f7bcf2fa40d3a204819f814a102b0b65
